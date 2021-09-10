@@ -1,0 +1,13 @@
+这个脚本代码Resnet152 正向运算测试
+
+安装运行库：
+
+命令行先执行
+pip3 install numpy
+再执行
+pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+
+最后执行
+Python3 test.py 
+运行脚本
+
