@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # modify by yourkg ，21/9/10
-
+# modify by yourkg ，21/9/18 v0.2
 
 import torch
 import torch.nn as nn
@@ -125,7 +125,7 @@ if __name__=='__main__':
     if torch.cuda.is_available():
         print(">",torch.cuda.get_device_name())
         print(">",torch.cuda.device_count())
-        selectis=input("输入要测试的显卡号：")    
+        selectis=int(input("输入要测试的显卡号："))    
         print(">",torch.cuda.get_device_properties(selectis))
         device = torch.device("cuda")
         torch.device('cuda', selectis)
